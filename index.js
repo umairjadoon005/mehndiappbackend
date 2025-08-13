@@ -113,7 +113,7 @@ const upload = multer({ storage });
 
 app.get('/design/new', isAuthenticated, async (req, res) =>{
     var categories= await Category.find();
-    res.render('uploadimage',{categories} );
+    res.render('uploadImage',{categories} );
 });
 
 
