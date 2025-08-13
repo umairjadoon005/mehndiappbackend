@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Uploaded Images</title>
+</head>
+<body>
+  <h1>Uploaded Images</h1>
+  <ul>
+    <% images.forEach(img => { %>
+      <li>
+        <img src="/uploads/<%= img.filename %>" width="150">
+        <p>Category: <%= img.category.name %></p>
+      </li>
+    <% }) %>
+  </ul>
+  <p><a href="/upload">Upload More</a></p>
+</body>
+</html>
+
+

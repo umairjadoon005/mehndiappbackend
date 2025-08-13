@@ -1,0 +1,15 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Category List</title>
+</head>
+<body>
+  <h1>Categories</h1>
+  <ol style="     display: flex; flex-direction: column; gap: 20px;">
+    <% categories.forEach(category => { %>
+      <li><%= category.name %></li>
+    <% }) %>
+  </ol>
+  <p><a href="/categories/new" class="btn btn-sm btn-primary">Add New Category</a></p>
+</body>
+</html>

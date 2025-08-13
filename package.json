@@ -1,0 +1,20 @@
+{
+  "name": "mehndi-admin",
+  "version": "1.0.10",
+  "description": "application back of design mehndi design",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.2",
+    "mongoose": "^8.17.1",
+    "multer": "^2.0.2"
+  }
+}
