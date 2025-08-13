@@ -30,7 +30,9 @@ app.use(session({
   saveUninitialized: true
 }));
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/mydb')
+
+// mongoose.connect('mongodb://localhost:27017/mydb')
+mongoose.connect('mongodb+srv://umairjadoon005:MRMzMmEK8OGztlGV@mydb.cuhv15f.mongodb.net/mydb')
   .then(async () => {
     console.log('✅ Mongo connected!');
   })
