@@ -19,10 +19,8 @@ const ADMIN_USER = {
 };
 app.use(expressLayouts);
 
-    app.use(express.static(__dirname + '/public'));
-    app.use(express.static(__dirname + '/uploads'));
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('layout','partials/header');
