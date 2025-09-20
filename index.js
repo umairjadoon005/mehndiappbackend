@@ -19,7 +19,8 @@ const ADMIN_USER = {
 };
 app.use(expressLayouts);
 
-app.use(express.static('uploads'));
+    app.use(express.static(__dirname + '/public'));
+    app.use(express.static(__dirname + '/uploads'));
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
